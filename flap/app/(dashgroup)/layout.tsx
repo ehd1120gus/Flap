@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <Header />
       </div>
       <div className="h-16 w-16 fixed inset-y-0 z-50">
-        <div className="p-4 boarder-b h-full flex items-center first-letter:">
+        <div className="p-4 boarder-b h-full flex items-center">
           <SidebarHidden />
         </div>
       </div>
