@@ -1,12 +1,18 @@
 import Header from "@/components/header";
+import { SidebarHidden } from "@/components/ui/dashboard/sidebarhidden";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col h-screen w-full">
-      <div className="w-full">
+    <div className="h-full">
+      <div className="md:pl-16 fixed inset-y-0 w-full z-50">
         <Header />
       </div>
-      <main className="">{children}</main>
+      <div className=" h-16 w-16 fixed inset-y-0 z-50">
+        <div className="p-4 boarder-b h-full flex items-center bg-white shadow-sm">
+          <SidebarHidden />
+        </div>
+      </div>
+      <main className="md:pl-56 pt-[80px] h-full">{children}</main>
     </div>
   );
 }
