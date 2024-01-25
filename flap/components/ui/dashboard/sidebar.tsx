@@ -8,7 +8,7 @@ const font = Montserrat({ weight: "600", subsets: ["latin"] });
 
 export const Sidebar = () => {
   return (
-    <div className="h-full border-r flex flex-col overflow-y-auto bg-white shadow-sm">
+    <div className="h-full border-r flex flex-col overflow-y-auto bg-neutral-900 shadow-sm">
       <div className="p-3">
         <FlapLogo />
         {/* <Logo /> */}
