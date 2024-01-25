@@ -12,52 +12,48 @@ import {
 
 export default function Header() {
   return (
-    <div className="text-md w-full h-16 pl-1 pr-4 py-4 bg-neutral-900 items-center gap-2 inline-flex">
+    <div className="text-md w-full h-16 pl-1 pr-4 py-4 items-center gap-2 inline-flex bg-secondary">
       <div className="flex h-full items-center">
         <Link href="/">
           <FlapLogo />
         </Link>
       </div>
-      <div className="flex px-2 py-[6px] rounded-lg shrink-0 justify-center items-center bg-transparent hover:bg-neutral-800 ">
-        <div className="flex text-white text-sm font-semibold font-['SF Pro Text'] leading-tight">
+      <div className="flex px-2 py-[6px] rounded-lg shrink-0 justify-center items-center btn-invisible">
+        <div className="flex text-sm font-semibold font-['SF Pro Text'] leading-tight">
           Product
         </div>
       </div>
       <div className="flex ml-auto space-x-2 items-center">
         <div className="hidden md:block">
-          <div className="flex h-8 w-60 bg-transparent rounded-md border border-neutral-700 hover:border-neutral-400 cursor-pointer items-center">
-            <HiOutlineSearch className="h-4 w-4 mx-2 text-neutral-400" />
-            <div className="text-neutral-400 text-sm font-['SF Pro Text'] ">
-              Type / to search
-            </div>
+          <div className="flex h-8 w-60 rounded-md border cursor-pointer items-center btn-secondary">
+            <HiOutlineSearch className="h-4 w-4 mx-2" />
+            <div className="text-sm font-['SF Pro Text']">Type / to search</div>
             <div className="flex ml-auto items-center">
-              <div className="text-neutral-400 text-sm font-thin font-['SF Pro Text'] ">
-                |
-              </div>
-              <GoCommandPalette className="h-4 w-4 mx-2 text-neutral-400 justify-center" />
+              <div className="text-sm font-thin font-['SF Pro Text']">|</div>
+              <GoCommandPalette className="h-4 w-4 mx-2 justify-center" />
             </div>
           </div>
         </div>
         <div className="hidden md:block">
-          <div className="text-neutral-400 text-md font-thin font-['SF Pro Text'] ">
+          <div className="text-secondary-foreground text-md font-thin font-['SF Pro Text'] ">
             |
           </div>
         </div>
-        <div className="flex h-8 bg-transparent rounded-md border border-neutral-700 hover:border-neutral-400 cursor-pointer items-center justify-center px-2">
-          <IoAdd className="h-5 w-5 text-neutral-400" />
-          <GoTriangleDown className="h-4 w-4 text-neutral-400" />
+        <div className="flex items-center justify-center h-8 rounded-md px-2 btn-secondary">
+          <IoAdd className="h-5 w-5" />
+          <GoTriangleDown className="h-4 w-4" />
         </div>
-        <div className="flex h-8 w-8 bg-transparent rounded-md flex-col border border-neutral-700 hover:border-neutral-400 cursor-pointer items-center justify-center">
-          <GoIssueOpened className="h-4 w-4 text-neutral-400" />
+        <div className="flex items-center justify-center w-8 h-8 rounded-md btn-secondary">
+          <GoIssueOpened className="h-4 w-4" />
         </div>
-        <div className="flex h-8 w-8 bg-transparent rounded-md flex-col border border-neutral-700 hover:border-neutral-400 cursor-pointer items-center justify-center">
-          <GoGitPullRequest className="h-4 w-4 text-neutral-400" />
+        <div className="flex items-center justify-center w-8 h-8 rounded-md btn-secondary">
+          <GoGitPullRequest className="h-4 w-4" />
         </div>
-        <div className="flex h-8 w-8 bg-transparent rounded-md flex-col border border-neutral-700 hover:border-neutral-400 cursor-pointer items-center justify-center">
-          <VscInbox className="h-4 w-4 text-neutral-400" />
+        <div className="flex items-center justify-center w-8 h-8 rounded-md btn-secondary">
+          <VscInbox className="h-4 w-4" />
         </div>
-        <div className="px-3 py-1.5 justify-start items-center gap-2 inline-flex">
-          <div className="text-white font-semibold font-['SF Pro Text'] leading-tight">
+        <div className="px-3 py-1.5 justify-start items-center gap-2 inline-flex btn-primary">
+          <div className="font-semibold font-['SF Pro Text'] leading-tight">
             Sign up
           </div>
         </div>
