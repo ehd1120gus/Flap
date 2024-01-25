@@ -12,7 +12,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <SidebarHidden />
         </div>
       </div>
-      <main className="md:pl-56 pt-[80px] h-full">{children}</main>
+      <main className="pt-16 h-full">{children}</main>
     </div>
   );
 }
