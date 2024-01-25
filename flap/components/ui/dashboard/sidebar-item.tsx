@@ -25,28 +25,32 @@ export const SidebarItem = ({ icon: Icon, label, href }: SidebarItemProps) => {
   };
 
   return (
-    <button
-      onClick={onClick}
-      type="button"
-      className={cn(
-        "flex items-center gap-x-2 text-slate-500 text-sm font-[500] pl-6 transition-all hover:text-slate-600 hover:bg-slate-300/20",
-        isActive &&
-          "text-sky-700 bg-sky-200/20 hover:bg-sky-200/20 hover:text-sky-700"
-      )}
-    >
-      <div className="flex items-center gap-x-2 py-4">
-        <Icon
-          size={22}
-          className={cn("text-slate-500", isActive && "text-sky-700")}
-        />
-        {label}
-      </div>
-      <div
+    <div className="flex">
+      <span
         className={cn(
-          "ml-auto opacity-0 border-2 border-sky-700 h-full transition-all",
+          "rounded-sm opacity-0 border-2 ml-2 border-sky-700 h-full inline-block",
           isActive && "opacity-100"
         )}
       />
-    </button>
+      <span className="inline-block h-full justify-center w-full mr-6">
+        <button
+          onClick={onClick}
+          type="button"
+          className={cn(
+            "flex w-full items-center gap-x-2 text-sm font-md pl-6 mx-2 btn-invisible",
+            isActive &&
+              "text-sky-700 bg-sky-200/20 hover:bg-sky-200/20 hover:text-sky-700"
+          )}
+        >
+          <div className="flex items-center gap-x-2 py-2">
+            <Icon
+              size={15}
+              className={cn("text-slate-500", isActive && "text-sky-700")}
+            />
+            {label}
+          </div>
+        </button>
+      </span>
+    </div>
   );
 };

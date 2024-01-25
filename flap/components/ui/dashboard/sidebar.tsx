@@ -8,7 +8,7 @@ const font = Montserrat({ weight: "600", subsets: ["latin"] });
 
 export const Sidebar = () => {
   return (
-    <div className="h-full border-r flex flex-col overflow-y-auto shadow-sm bg-secondary">
+    <div className="h-full flex flex-col overflow-y-auto shadow-sm bg-background w">
       <div className="p-3">
         <FlapLogo />
         {/* <Logo /> */}
@@ -21,7 +21,7 @@ export const Sidebar = () => {
           {/* <div className="truncate">Sknow</div> */}
         </h1>
       </div>
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-ful bg-red">
         <SidebarRoutes />
       </div>
     </div>
