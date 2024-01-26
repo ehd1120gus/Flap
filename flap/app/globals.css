@@ -226,15 +226,31 @@
 }
 @layer components {
   .btn-invisible {
-    @apply border rounded-md bg-invisible text-invisible-foreground border-invisible-border hover:bg-invisible-hover hover:text-invisible-hover-foreground hover:border-invisible-hover-border hover:cursor-pointer active:bg-invisible-pressed active:text-invisible-pressed-foreground active:border-invisible-pressed-border;
+    @apply border rounded-md bg-invisible text-invisible-foreground border-invisible-border
+    /* Hover State */
+    hover:bg-invisible-hover hover:text-invisible-hover-foreground hover:border-invisible-hover-border hover:cursor-pointer
+    /* Active State */
+    active:bg-invisible-pressed active:text-invisible-pressed-foreground active:border-invisible-pressed-border;
   }
   .btn-secondary {
-    @apply border rounded-md bg-secondary text-secondary-foreground border-secondary-border hover:bg-secondary-hover hover:text-secondary-hover-foreground hover:border-secondary-hover-border hover:cursor-pointer active:bg-secondary-pressed active:text-secondary-pressed-foreground active:border-secondary-pressed-border;
+    @apply border rounded-md bg-secondary text-secondary-foreground border-secondary-border
+    /* Hover State */
+    hover:bg-secondary-hover hover:text-secondary-hover-foreground hover:border-secondary-hover-border hover:cursor-pointer hover:shadow-sm
+    /* Active State */
+    active:bg-secondary-pressed active:text-secondary-pressed-foreground active:border-secondary-pressed-border active:shadow-inner;
   }
   .btn-danger {
-    @apply border rounded-md bg-danger text-danger-foreground border-danger-border hover:bg-danger-hover hover:text-danger-hover-foreground hover:border-danger-hover-border hover:cursor-pointer active:bg-danger-pressed active:text-danger-pressed-foreground active:border-danger-pressed-border;
+    @apply border rounded-md bg-danger text-danger-foreground border-danger-border
+    /* Hover State */
+    hover:bg-danger-hover hover:text-danger-hover-foreground hover:border-danger-hover-border hover:cursor-pointer hover:shadow-sm
+    /* Active State */
+    active:bg-danger-pressed active:text-danger-pressed-foreground active:border-danger-pressed-border active:shadow-inner;
   }
   .btn-primary {
-    @apply border rounded-md bg-primary text-primary-foreground border-primary-border hover:bg-primary-hover hover:text-primary-hover-foreground hover:border-primary-hover-border hover:cursor-pointer focus:bg-primary-focus focus:text-primary-focus-foreground focus:border-primary-focus-border focus:cursor-pointer active:bg-primary-pressed active:text-primary-pressed-foreground active:border-primary-pressed-border;
+    @apply border rounded-md bg-primary text-primary-foreground border-primary-border
+    /* Hover State */
+    hover:bg-primary-hover hover:text-primary-hover-foreground hover:border-primary-hover-border hover:cursor-pointer hover:shadow-sm
+    /* Active State */
+    active:bg-primary-pressed active:text-primary-pressed-foreground active:border-primary-pressed-border active:shadow-inner;
   }
 }

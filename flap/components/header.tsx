@@ -12,14 +12,14 @@ import {
 
 export default function Header() {
   return (
-    <div className="text-md w-full h-16 pl-1 pr-4 py-4 items-center gap-2 inline-flex bg-secondary">
+    <div className="text-md w-full h-16 pl-1 pr-4 py-4 items-center gap-2 inline-flex bg-secondary border-b">
       <div className="flex h-full items-center">
         <Link href="/">
           <FlapLogo />
         </Link>
       </div>
       <div className="flex px-2 py-[6px] rounded-lg shrink-0 justify-center items-center btn-invisible">
-        <div className="flex text-sm font-semibold font-['SF Pro Text'] leading-tight">
+        <div className="flex text-sm font-semibold font-['SF Pro Text'] leading-tight text-foreground">
           Product
         </div>
       </div>
